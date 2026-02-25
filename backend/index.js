@@ -15,12 +15,14 @@ import reviewRoute from './route/reviewRoute.js';
 import notificationRoute from './route/notificationRoute.js';
 dotenv.config()
 
-const port = 5000;
+const port = process.en.PORT || 5000;
+const client = process.env.FRONTEND_URL;
+
 const app = express();
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:client,
     credentials:true
 }))
 
