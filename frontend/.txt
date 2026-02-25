@@ -1,0 +1,6 @@
+green color: #A4FE6A
+blue color: #2A27F3
+white color: #F6F5F8
+blue color : #3334FE
+black shades: #1F2024
+
