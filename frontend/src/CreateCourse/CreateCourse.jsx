@@ -10,6 +10,8 @@ import { setCourseData } from "../redux/courseSlice.js";
 import { getCurrrentCourse } from "../redux/actions/userCoursesAction.js";
 import { toast } from "react-toastify";
 import Loader from "../Components/Loader.jsx";
+
+
 const CreateCourse = () => {
   const dispatch = useDispatch();
   const mode = useSelector((state) => state.app.mode);

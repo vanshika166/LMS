@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FiPlus, FiEdit, FiTrash2 } from "react-icons/fi";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { getUserBlogs } from "../redux/actions/blogAction.js";
 import { useNavigate } from "react-router-dom";
+import { appDataContext } from "../Context/AppContext.jsx";
 
 const BlogPage = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const mode = useSelector((state) => state.app.mode);
   const userblogs = useSelector((state) => state.userBlogs.userBlogData);
-  const serverURL = "http://localhost:5000";
+  const {serverURL} = useContext(appDataContext);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [image, setImage] = useState("");
