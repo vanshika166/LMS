@@ -16,14 +16,13 @@ import notificationRoute from './route/notificationRoute.js';
 dotenv.config()
 
 const port = process.env.PORT || 5000;
-const client = process.env.FRONTEND_URL;
 
 const app = express();
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:client,
-    credentials:true
+    origin: "https://lms-frontend-9o4z.onrender.com",
+    credentials: true
 }))
 
 app.use('/api/auth',authRoute)
