@@ -40,8 +40,8 @@ export const signup = async (req, res) => {
     const token =  generateToken(user._id);
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "Lax",
+      secure: true, 
+      sameSite: "None",
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
@@ -75,9 +75,9 @@ export const login = async(req,res)=>{
         const token = generateToken(existUser._id)
         
         res.cookie("token",token,{
-          httpOnly:true,
-          secure:false,
-          sameSite:"Lax",
+          httpOnly: true,
+          secure: true, 
+          sameSite: "None,
           maxAge:7 * 24 * 60 * 60* 1000
         })
 
@@ -94,9 +94,9 @@ export const login = async(req,res)=>{
 export const logout = async(req,res)=>{
   try {
     await res.clearCookie("token",{
-      httpOnly:true,
-      secure:false,
-      sameSite:"Lax"
+      httpOnly: true,
+      secure: true, 
+      sameSite: "None
     })
     return res.status(200).json({message:"logout successfully !"})
   } catch (error) {
@@ -105,7 +105,7 @@ export const logout = async(req,res)=>{
   }
 }
 
-// fucntion for google authentication
+// function for Google authentication
 
 export const GoogleAuthetication = async(req,res)=>{
   try {
@@ -119,9 +119,9 @@ export const GoogleAuthetication = async(req,res)=>{
      const token = generateToken(varifyUser._id)
         
         res.cookie("token",token,{
-          httpOnly:true,
-          secure:false,
-          sameSite:"Lax",
+          httpOnly: true,
+          secure: true, 
+          sameSite: "None
           maxAge:7 * 24 * 60 * 60* 1000
         })
     return res.status(200).json("loggedIn successfully.")
@@ -202,9 +202,9 @@ export const resetPassword = async(req,res)=>{
     await verifyUser.save();
     const token = generateToken(verifyUser._id)
     res.cookie("token",token,{
-      httpOnly:true,
-      secure:false,
-      sameSite:"Strict",
+      httpOnly: true,
+      secure: true, 
+      sameSite: "None
       maxAge: 7 * 24 *60 * 60* 1000
     })
 
