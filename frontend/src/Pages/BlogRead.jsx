@@ -65,7 +65,7 @@ const BlogRead = () => {
               }`}
             >
               <img
-                src={currentBlog?.creator?.photoURL || "/default-avatar.png"}
+                src={currentBlog?.creator?.photoURL?.url || "/default-avatar.png"}
                 alt={currentBlog?.creator?.username}
                 className="w-8 h-8 rounded-full object-cover border border-blue-200"
               />
@@ -124,7 +124,7 @@ const BlogRead = () => {
           >
             <div className="flex items-center gap-5">
               <img
-                src={currentBlog?.creator?.photoURL || "/default-avatar.png"}
+                src={currentBlog?.creator?.photoURL?.url || "/default-avatar.png"}
                 alt={currentBlog?.creator?.username}
                 className="w-16 h-16 rounded-full object-cover border-2 border-blue-300"
               />
