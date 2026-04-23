@@ -46,6 +46,19 @@ The platform focuses on simplicity, usability, and helping users stay consistent
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](./screenshots/LMShome.png)
+
+### 📊 Teacher Dashboard
+![T-Dashboard](./screenshots/t-dash.png)
+
+### 📊 Student Dashboard
+![S-Dashboard](./screenshots/s-dash.png)
+
+---
+
 ## 🌐 Live Demo
 
 👉 [View LMS Live](https://lms-frontend-9o4z.onrender.com)
