@@ -10,12 +10,12 @@ The platform focuses on simplicity, usability, and helping users stay consistent
 
 ## ✨ Features
 
-- 📖 Course browsing and access  
-- 🧑‍🏫 Course creation and management (for educators)  
-- 📊 Progress tracking with dashboard insights  
-- 👤 Secure user authentication system  
-- 🧑‍💻 Personalized user dashboard  
-- 💻 Clean and responsive user interface  
+- Course browsing and access  
+- Course creation and management (for educators)  
+- Progress tracking with dashboard insights  
+- Secure user authentication system  
+- Personalized user dashboard  
+- Clean and responsive user interface  
 
 ---
 
@@ -66,5 +66,5 @@ The platform focuses on simplicity, usability, and helping users stay consistent
 ---
 
 
-## 👩‍💻 Developed By **Vanshika **
+## 👩‍💻 Developed By Vanshika 
 
